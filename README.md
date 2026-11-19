@@ -62,6 +62,11 @@ My prediction:
 
 Why: For Bag a, add() makes _items 1. Then a.items = -5 is refused, because the setter only accepts values of 0 or more, so it stays 1 and prints 1. For BigBag b, its add() calls super.add() two times, so each add() adds 2. After two calls _items is 4. Then b.items = b.items + 1 makes it 5, which is allowed, so it prints 5.
 
-Real output: (I will add it after running the code)
+Real output:
 
-Was I right? (I will answer after running the code)
+```
+1
+5
+```
+
+Was I right? Yes, my prediction matched the real output.
